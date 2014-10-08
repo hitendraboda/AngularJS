@@ -1,0 +1,18 @@
+﻿<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">View 2</h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label>City</label>
+                <input type="text" class="form-control" data-ng-model="filter.city" placeholder="Enter city">
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="cust in customers | filter : filter.city">{{cust.name}} - {{cust.city}}
+                </li>
+            </ul>
+            <a href="#/view1" class="btn btn-default">View 1</a>
+        </div>
+    </div>
+</div>
